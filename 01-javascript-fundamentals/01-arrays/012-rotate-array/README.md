@@ -6,7 +6,7 @@ Given an array, rotate it to the right by k steps in-place and return the same a
 
 ## Examples
 
-- For [1, 2, 3, 4, 5] and k = 2, the array becomes [4, 5, 1, 2, 3]
+- rotateArray([1, 2, 3, 4, 5], 2) returns [4, 5, 1, 2, 3]
 - rotateArray([1, 2], 3) returns [2, 1]
 - rotateArray([], 4) returns []
 

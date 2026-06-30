@@ -6,8 +6,8 @@ Given an array of objects, return a new array sorted by one field in ascending o
 
 ## Examples
 
-- sortObjectsByField([{ age: 30 }, { age: 20 }], "age") returns objects ordered by age 20 then 30
-- sortObjectsByField([{ name: "B" }, { name: "A" }], "name", "desc") returns B before A
+- sortObjectsByField([{ age: 30 }, { age: 20 }], "age") returns [{ age: 20 }, { age: 30 }]
+- sortObjectsByField([{ name: "B" }, { name: "A" }], "name", "desc") returns [{ name: "B" }, { name: "A" }]
 - sortObjectsByField([], "age") returns []
 
 ## Constraints

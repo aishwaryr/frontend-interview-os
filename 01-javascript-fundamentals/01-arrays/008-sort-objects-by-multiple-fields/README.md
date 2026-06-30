@@ -6,9 +6,9 @@ Given an array of objects and ordered sort criteria, return a new array sorted b
 
 ## Examples
 
-- Sort [{ a: 1, b: 2 }, { a: 1, b: 1 }] by a then b to get b:1 before b:2
-- Sort by score descending to place higher scores first
-- Sorting an empty list returns []
+- sortObjectsByFields([{ a: 1, b: 2 }, { a: 1, b: 1 }], [{ field: "a" }, { field: "b" }]) returns [{ a: 1, b: 1 }, { a: 1, b: 2 }]
+- sortObjectsByFields([{ score: 9, name: "A" }, { score: 10, name: "B" }], [{ field: "score", direction: "desc" }]) returns [{ score: 10, name: "B" }, { score: 9, name: "A" }]
+- sortObjectsByFields([], [{ field: "score" }]) returns []
 
 ## Constraints
 

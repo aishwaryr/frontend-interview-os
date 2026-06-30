@@ -6,9 +6,9 @@ Given an array and a key selector, group the items by key. The selector may be a
 
 ## Examples
 
-- groupBy([{ type: "a" }, { type: "b" }, { type: "a" }], "type") returns groups for a and b
-- groupBy([1, 2, 3, 4], n => n % 2 === 0 ? "even" : "odd") returns odd and even groups
-- groupBy([], "type") returns an empty grouping
+- groupBy([{ type: "a" }, { type: "b" }, { type: "a" }], "type") returns { a: [{ type: "a" }, { type: "a" }], b: [{ type: "b" }] }
+- groupBy([1, 2, 3, 4], n => n % 2 === 0 ? "even" : "odd") returns { odd: [1, 3], even: [2, 4] }
+- groupBy([], "type") returns {}
 
 ## Constraints
 

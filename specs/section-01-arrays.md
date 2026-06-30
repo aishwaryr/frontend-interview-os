@@ -84,138 +84,158 @@ Every problem folder must contain:
 
 README.md
 
-worked-example.md
-
-mental-model.md
-
-hints.md
-
 main.js
 
 solution.js
 
-complexity.md
+interview-guide.md
 
-follow-ups.md
-
-variants.md
-
-common-mistakes.md
-
-notes.md
+Do not generate any other files inside a problem folder unless explicitly requested.
 
 ---
 
 # main.js
 
-Generate an EMPTY file.
+Generate a learner practice file.
 
-Do not include:
+Include:
 
-- comments
-- TODOs
-- function signatures
-- starter code
-- examples
+- One empty function declaration using the same function name used in the README examples
+- Six `console.log(...)` test calls
+- The first three calls must match the README examples
+- The last three calls should cover useful edge cases
+- Each call must include the expected result in a trailing comment
 
-The learner writes everything from scratch.
+Example:
+
+```js
+function removeDuplicates() {}
+
+console.log(removeDuplicates([1, 2, 1, 3, 2])) // returns [1, 2, 3]
+console.log(removeDuplicates(["a", "a", "b"])) // returns ["a", "b"]
+console.log(removeDuplicates([])) // returns []
+console.log(removeDuplicates([1, 1, 1])) // returns [1]
+console.log(removeDuplicates([true, false, true])) // returns [true, false]
+console.log(removeDuplicates([0, -0, NaN, NaN])) // returns [0, NaN]
+```
+
+Do not implement the function.
+
+The learner fills in the function body from scratch.
 
 ---
 
 # README.md
 
-Contains ONLY the interview question.
+This is the primary learning document.
 
-Include:
+Include these sections in order:
 
-- Problem Statement
-- Function Signature
-- Examples
-- Constraints
-- Expected Return Value
+1. Problem Statement
+2. Examples
+3. Constraints
+4. Worked Example
+5. Mental Model
 
-Do NOT explain the solution.
+Do not include:
 
-Keep it similar to an interview prompt.
+- Function signatures
+- Starter code
+- Implementation code
+- Solution code
 
----
+## Problem Statement
 
-# worked-example.md
+Write the interview question naturally, similar to how an interviewer would describe it.
 
-The most important file.
+Do not explain the solution in this section.
+
+## Examples
+
+Provide several representative examples.
+
+These examples must use the same function name that appears in `main.js`.
+
+## Constraints
+
+List realistic interview constraints.
+
+## Worked Example
+
+This is the most important part.
 
 Never begin with code.
 
-Structure:
+Use this structure:
 
-Problem
-
-↓
-
-Observation 1
-
-↓
-
-Observation 2
-
-↓
-
-Key Insight
-
-↓
-
-High-Level Algorithm
-
-↓
-
-Pseudocode
-
-↓
-
-Implementation Tips
+- Observation 1
+- Observation 2
+- Key Insight
+- High-Level Algorithm
+- Pseudocode
+- Implementation Tips
 
 The learner should understand WHY before HOW.
 
 Minimize cognitive load.
 
----
-
-# mental-model.md
+## Mental Model
 
 Explain:
 
-- Reusable interview pattern
-- How to recognize it
+- The reusable interview pattern
+- When to recognize it
 - Similar interview questions
-- Typical data structures used
+- Typical data structures involved
 
 ---
 
-# hints.md
+# interview-guide.md
 
-Generate five progressive hints.
+Merge all supporting material into this file.
 
-Hint 1
+Include these sections:
 
-Tiny nudge.
+## Hints
 
-Hint 2
+Provide five progressive hints.
 
-Useful observation.
+Do not reveal the solution immediately.
 
-Hint 3
+## Complexity
 
-Suggest the data structure.
+Explain:
 
-Hint 4
+- Time Complexity
+- Space Complexity
+- Tradeoffs
 
-Outline the algorithm.
+## Interview Follow-ups
 
-Hint 5
+Generate realistic interview follow-up questions.
 
-Nearly complete solution.
+Examples:
 
-Never reveal everything immediately.
+- Can this be done in-place?
+- Can memory usage be reduced?
+- How would this scale?
+- How would you handle duplicates?
+- What edge cases should be considered?
+
+## Variants
+
+Include:
+
+- Easier variation
+- Medium variation
+- Hard variation
+- Real interview variation
+
+## Common Mistakes
+
+List common implementation mistakes candidates make.
+
+The goal is to help prevent interview mistakes.
 
 ---
 
@@ -229,59 +249,6 @@ Requirements:
 - Interview quality
 - Readable
 - Minimal comments
-
----
-
-# complexity.md
-
-Explain:
-
-- Time complexity
-- Space complexity
-- Tradeoffs
-- Better/worse approaches
-
----
-
-# follow-ups.md
-
-Generate realistic interview follow-up questions.
-
-Examples:
-
-- Can this be done in-place?
-- Can memory usage be reduced?
-- Can this work with streams?
-- Can this scale to millions of items?
-
----
-
-# variants.md
-
-Generate:
-
-- Easier variation
-- Medium variation
-- Hard variation
-- Real interview variation
-
----
-
-# common-mistakes.md
-
-List common implementation mistakes.
-
-The goal is to prevent interview mistakes.
-
----
-
-# notes.md
-
-Generate concise revision notes.
-
-Maximum one page.
-
-Designed for reading just before interviews.
 
 ---
 
@@ -370,6 +337,8 @@ Do not omit any listed problem.
 Do not change numbering.
 
 Do not change folder names.
+
+For all future problem folders generated under `01-javascript-fundamentals`, use this exact four-file structure and `main.js` starter-test pattern unless explicitly instructed otherwise.
 
 If any requirement is ambiguous,
 

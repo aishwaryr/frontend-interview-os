@@ -6,7 +6,7 @@ Given an array of numbers, move all zeroes to the end in-place while preserving 
 
 ## Examples
 
-- For [0, 1, 0, 3, 12], the array becomes [1, 3, 12, 0, 0]
+- moveZeroes([0, 1, 0, 3, 12]) returns [1, 3, 12, 0, 0]
 - moveZeroes([0, 0, 1]) returns [1, 0, 0]
 - moveZeroes([]) returns []
 

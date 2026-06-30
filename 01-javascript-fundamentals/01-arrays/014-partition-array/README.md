@@ -8,7 +8,7 @@ Given an array and a predicate, return a new array where all items that satisfy 
 
 - partitionArray([1, 2, 3, 4], n => n % 2 === 0) returns [2, 4, 1, 3]
 - partitionArray(["a", "bb", "c"], s => s.length === 1) returns ["a", "c", "bb"]
-- partitionArray([], predicate) returns []
+- partitionArray([], item => Boolean(item)) returns []
 
 ## Constraints
 

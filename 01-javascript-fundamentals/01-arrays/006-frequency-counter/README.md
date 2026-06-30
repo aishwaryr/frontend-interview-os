@@ -6,9 +6,9 @@ Given an array, count how many times each value appears.
 
 ## Examples
 
-- frequencyCounter(["a", "b", "a"]) returns counts where a is 2 and b is 1
-- frequencyCounter([1, 1, 2, 3, 2, 1]) returns counts where 1 is 3, 2 is 2, and 3 is 1
-- frequencyCounter([]) returns an empty count map
+- frequencyCounter(["a", "b", "a"]) returns Map { "a" => 2, "b" => 1 }
+- frequencyCounter([1, 1, 2, 3, 2, 1]) returns Map { 1 => 3, 2 => 2, 3 => 1 }
+- frequencyCounter([]) returns Map {}
 
 ## Constraints
 
